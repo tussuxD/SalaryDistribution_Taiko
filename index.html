@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Distribution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Salary Distribution dApp</h1>
+    <div id="app">
+        <div>
+            <h2>Add Employee</h2>
+            <input id="employeeAddress" type="text" placeholder="Employee Address">
+            <input id="employeeSalary" type="number" placeholder="Salary">
+            <button onclick="addEmployee()">Add</button>
+        </div>
+        <div>
+            <h2>Update Employee Salary</h2>
+            <input id="updateEmployeeAddress" type="text" placeholder="Employee Address">
+            <input id="newEmployeeSalary" type="number" placeholder="New Salary">
+            <button onclick="updateEmployeeSalary()">Update Salary</button>
+        </div>
+        <div>
+            <h2>Remove Employee</h2>
+            <input id="removeEmployeeAddress" type="text" placeholder="Employee Address">
+            <button onclick="removeEmployee()">Remove</button>
+        </div>
+        <div>
+            <h2>Pay Employees</h2>
+            <button onclick="payEmployees()">Pay All Employees</button>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
